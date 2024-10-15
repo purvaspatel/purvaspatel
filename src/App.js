@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css"; // Tailwind will compile custom animations here
 import ProfilePic from "./assets/profilepurva.jpg";
-import { EnvelopeIcon } from "@heroicons/react/24/solid"; // For the mail icon
-import { LinkIcon } from "@heroicons/react/24/solid";
+
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -149,19 +148,18 @@ const App = () => {
 
               {/* Mail Section */}
               <div className="flex flex-col items-center mb-8">
-  <img
-    src="https://cdn.simpleicons.org/gmail/EA4335"
-    alt="Email"
-    className="h-8 w-8 mb-2 hover:scale-110 transition duration-200"
-  />
-  <a
-    href="mailto:purvavisionnxt@gmail.com"
-    className="text-lg hover:underline"
-  >
-    purvavisionnxt@gmail.com
-  </a>
-</div>
-
+                <img
+                  src="https://cdn.simpleicons.org/gmail/EA4335"
+                  alt="Email"
+                  className="h-8 w-8 mb-2 hover:scale-110 transition duration-200"
+                />
+                <a
+                  href="mailto:purvavisionnxt@gmail.com"
+                  className="text-lg hover:underline"
+                >
+                  purvavisionnxt@gmail.com
+                </a>
+              </div>
 
               {/* Social Media Icons Section */}
               <div className="flex flex-wrap justify-center items-center gap-8 px-4 lg:px-20">
